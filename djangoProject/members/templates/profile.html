@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+
+{% block main %}
+<h1>Contact Detail {{ object.email }}</h1>
+
+<h2>name: {{ object.first_name }}</h2>
+<h2>last name: {{ object.last_name }}</h2>
+<h2>instrument: {{ object.instrument}}</h2>
+
+<a href="{% url 'contact_update' object.pk %}">Update</a>
+<a href="{% url 'contact_delete' object.pk %}">Delete</a>
+<a href="{% url 'contacts_list' %}">Back</a>
+{% endblock main %}

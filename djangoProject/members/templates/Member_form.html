@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+
+{% block main %}
+<h1>Add new Member</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock main %}

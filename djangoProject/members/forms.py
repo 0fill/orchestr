@@ -5,4 +5,4 @@ from .models import Member
 class MemberForm(forms.ModelForm):
     class Meta:
         model = Member
-        fields = ['first_name', 'last_name', 'email', 'instrument', 'password1', 'password2']
+        fields = "__all__"

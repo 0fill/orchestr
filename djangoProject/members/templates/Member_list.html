@@ -8,7 +8,7 @@
     {% for contact in page_obj %}
       <li>
         <a href="{% url 'member_detail' contact.pk %}">
-          {{ contact.first_name }} {{ contact.last_surname }}
+          {{ contact.first_name }} {{ contact.last_name }}-{{contact.instrument}}
         </a>
       </li>
     {% empty %}
